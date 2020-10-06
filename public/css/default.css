@@ -296,6 +296,7 @@ a, a:visited {
    transition: color .3s ease-in-out;
 }
 a:hover, a:focus { color: #313131; }
+a i:hover, i:focus { font-size:25px; }
 p a, p a:visited { line-height: inherit; }
 
 
@@ -464,7 +465,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
    font: 16px/30px 'opensans-bold', sans-serif;
-   background: #11ABB0;
+   background: #474747;
    display: inline-block;
 	text-decoration: none;
    letter-spacing: 0;
@@ -487,12 +488,12 @@ input[type="button"] {
    border-radius: 3px;
 }
 
-.button:hover,
+smoothscroll.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-   background: #3d4145;
+   background: #474747;
    color: #fff;
 }
 
@@ -501,7 +502,7 @@ button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
-   background: #3d4145;
+   background: #474747;
    color: #fff;
 }
 

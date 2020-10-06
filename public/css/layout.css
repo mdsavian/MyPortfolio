@@ -100,30 +100,31 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover 
 { 
-   color: #11ABB0;
+   color: #474747;
 }
 
 /* scrolldown link */
-header .scrolldown a {
+ header .scrolldown a {
    position: absolute;
-   bottom: 30px;
-   left: 50%;
+   bottom: 80px;
+   left: 45%;
    margin-left: -29px;
    color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
+   display: block;   
+   font-size: 22px;
+   line-height: 25px;
    color: #fff;
-   border-radius: 100%;
-
+   border-radius: 1000px;
+   background-color: #474747;  
    -webkit-transition: all .3s ease-in-out;
    -moz-transition: all .3s ease-in-out;
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
+} 
+header .scrolldown a:hover { 
+   color: #474747; 
+   background-color: white;
 }
-header .scrolldown a:hover { color: #11ABB0; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -196,12 +197,18 @@ ul#nav li a:after {
    background: #fff;
    transition: width 0.3s ease 0s, left 0.3s ease 0s;
    width: 0;
+   padding-bottom: 4px; 
  }
  ul#nav li a:hover:after { 
    width: 100%; 
    left: 0; 
  }
-ul#nav li.current a { color: #F06000; }
+ 
+ul#nav li.current a {
+   font-weight: bold; 
+   border-bottom: 4px solid #FFFFFF;
+   padding-bottom: 4px; 
+}
 
 
 /* ------------------------------------------------------------------ */
@@ -229,9 +236,18 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
+   /* width: 120px;
+   height: 120px; */
+   border-radius: 1000px;
+   transition: all 0.3s ease-out   
+}
+#about .row:hover .profile-pic{
+   
+   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.12);
+   transform: translatey(-6px);
+   
+   transform: rotate(-0.03turn);
+    
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {

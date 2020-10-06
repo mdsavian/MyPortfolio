@@ -4,11 +4,8 @@ class Header extends Component {
    render() {
 
       if (this.props.data) {
-         var name = this.props.data.name;
          var occupation = this.props.data.occupation;
-         var description = this.props.data.description;
          var country = this.props.data.address.country;
-         var city = this.props.data.address.city;
          var networks = this.props.data.social.map(function (network) {
             return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
          })
@@ -27,7 +24,7 @@ class Header extends Component {
                   <li><a className="smoothscroll" href="#about">About</a></li>
                   <li><a className="smoothscroll" href="#resume">Resume</a></li>
                   <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-                  <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
+                  {/* <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li> */}
                   <li><a className="smoothscroll" href="#contact">Contact</a></li>
                </ul>
 
@@ -42,14 +39,22 @@ class Header extends Component {
                </span> Actually I'm working as <span>full stack software engineer on a web project for telemedicine</span> in Brazil.</h3>
                   <hr />
                   <ul className="social">
-                     {networks}
+                     {networks}                     
                   </ul>
+                  <p>
+                     
+                  </p>
                </div>
             </div>
 
             <p className="scrolldown">
-               <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+            <a href="#contact" className="button smoothscroll"> Get in touch &nbsp; <i className="fa fa-comment"></i></a>
             </p>
+
+            {/* <p className="scrolldown">
+            
+               
+            </p> */}
 
          </header>
       );
