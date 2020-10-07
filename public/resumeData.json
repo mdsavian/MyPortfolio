@@ -82,25 +82,45 @@
     ],
     "skills": [
       {
-        "name": "Git",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
-        "image": "images/tech/git.jpg"
-      },
-      {
         "name": ".Net Core",
         "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
-        "image": "images/tech/git.jpg"
+        "image": "images/tech/net_core.png"
       },
       {
-        "name": "TypeScript",
+        "name": "Xamarin",
         "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
-        "image": "images/tech/git.jpg"
+        "image": "images/tech/xamarin.png"
+      },
+      {
+        "name": "SQL",
+        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "image": "images/tech/sql.jpg"
       },
       {
         "name": "Node.js",
         "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "image": "images/tech/nodejs.png"
+      },      
+      {
+        "name": "TypeScript",
+        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "image": "images/tech/typescript.webp"
+      },
+      {
+        "name": "HTML5",
+        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "image": "images/tech/html5.png"
+      },
+      {
+        "name": "React",
+        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "image": "images/tech/react.png"
+      },
+      {
+        "name": "Git",
+        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
         "image": "images/tech/git.jpg"
-      }      
+      }
     ]
   },
   "portfolio": {
