@@ -15,8 +15,8 @@
       "zip": "95080-190",
       "country":"Brazil"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "http://www.marlonsavian.com",
+    "resumedownload":"https://drive.google.com/uc?export=pdf&id=1id7mAm5rrDV6vmmwKBe8Y81TL8bRcwPH",    
     "social":[
       {
         "name":"linkedin",
@@ -63,10 +63,10 @@
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"My Smart Clinic",
+        "title":"Software Engineer",
+        "years":"July 2020 - Present",
+        "description":"I'm responsible for analyzing and code the best solution for a web app in React with backend on Node.js."
       },
       {
         "company":"Super Cool Studio",
