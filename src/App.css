@@ -1,0 +1,8 @@
+.center, .feature-item {
+    text-align: center;
+}
+.feature-item {
+    margin-top: 2.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}

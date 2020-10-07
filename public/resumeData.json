@@ -1,154 +1,151 @@
 {
   "main": {
-    "name":"Marlon Savian",
-    "occupation":"Software Engineer",
-    "description":"I'm specializing in <span> building complex, fast and high-quality backend softwares for companies.\b</span> Actually I'm working as \b<span>full stack software engineer on a web project </span> for telemedicine in Brazil.",
-    "image":"profilepic.png",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "name": "Marlon Savian",
+    "occupation": "Software Engineer",
+    "description": "I'm specializing in <span> building complex, fast and high-quality backend softwares for companies.\b</span> Actually I'm working as \b<span>full stack software engineer on a web project </span> for telemedicine in Brazil.",
+    "image": "profilepic.png",
+    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "marlon.savian@gmail.com",
     "phone": "+55 54 99949-1804",
-    "address":{
-      "street":"Rua Garibaldi",
-      "city":"Caxias do Sul",
-      "state":"Rio Grande do Sul",
+    "address": {
+      "street": "Rua Garibaldi",
+      "city": "Caxias do Sul",
+      "state": "Rio Grande do Sul",
       "zip": "95080-190",
-      "country":"Brazil"
+      "country": "Brazil"
     },
     "website": "http://www.marlonsavian.com",
-    "resumedownload":"https://drive.google.com/uc?export=pdf&id=1id7mAm5rrDV6vmmwKBe8Y81TL8bRcwPH",    
-    "social":[
+    "resumedownload": "https://drive.google.com/uc?export=pdf&id=1id7mAm5rrDV6vmmwKBe8Y81TL8bRcwPH",
+    "social": [
       {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/marlon-savian/",
-        "className":"fa fa-linkedin"
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/marlon-savian/",
+        "className": "fa fa-linkedin",
+        "title": "Linkedin"
       },
       {
-        "name":"github",
-        "url":"https://github.com/mdsavian",
-        "className":"fa fa-github"
+        "name": "github",
+        "url": "https://github.com/mdsavian",
+        "className": "fa fa-github",
+        "title": "Github"
       },
       {
-        "name":"instagram",
-        "url":"https://www.instagram.com/marlonsavian/",
-        "className":"fa fa-instagram"
+        "name": "instagram",
+        "url": "https://www.instagram.com/marlonsavian/",
+        "className": "fa fa-instagram",
+        "title": "Instagram"
       },
       {
-        "name":"facebook",
-        "url":"https://www.facebook.com/marlon.savian/",
-        "className":"fa fa-facebook"
+        "name": "facebook",
+        "url": "https://www.facebook.com/marlon.savian/",
+        "className": "fa fa-facebook",
+        "title": "Facebook"
       },
       {
-        "name":"twitter",
-        "url":"https://twitter.com/MarlonSavian",
-        "className":"fa fa-twitter"
-      }  
-    ]
-  },
-  "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
-    "education":[
-      {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      }
-    ],
-    "work":[
-      {
-        "company":"My Smart Clinic",
-        "title":"Software Engineer",
-        "years":"July 2020 - Present",
-        "description":"I'm responsible for analyzing and code the best solution for a web app in React with backend on Node.js."
-      },
-      {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      }
-    ],
-    "skills":[
-      {
-        "name":"Git",
-        "level":"60%"
-      },
-      {
-        "name":"Illustrator",
-        "level":"55%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"HTML5",
-        "level":"80%"
-      },
-      {
-        "name":"VueJs",
-        "level":"50%"
-      },
-      {
-        "name":"MongoDB",
-        "level":"80%"
+        "name": "twitter",
+        "url": "https://twitter.com/MarlonSavian",
+        "className": "fa fa-twitter",
+        "title": "Twitter"
       }
     ]
   },
-  "portfolio":{
+  "resume": {
+    "skillmessage": "I can help you with",
+    "education": [
+      {
+        "school": "University?",
+        "degree": "Masters in Beer tasting",
+        "graduated": "April 2007",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      },
+      {
+        "school": "School #1 Maybe College?",
+        "degree": "What did you study 101",
+        "graduated": "March 2003",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      }
+    ],
+    "work": [
+      {
+        "company": "My Smart Clinic",
+        "title": "Software Engineer",
+        "years": "July 2020 - Present",
+        "description": "I'm responsible for analyzing and code the best solution for a web app in React with backend on Node.js."
+      },
+      {
+        "company": "Super Cool Studio",
+        "title": "Junior bug fixer",
+        "years": "March 2007 - February 2010",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Git",
+        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "image": "images/tech/git.jpg"
+      },
+      {
+        "name": ".Net Core",
+        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "image": "images/tech/git.jpg"
+      },
+      {
+        "name": "TypeScript",
+        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "image": "images/tech/git.jpg"
+      },
+      {
+        "name": "Node.js",
+        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "image": "images/tech/git.jpg"
+      }      
+    ]
+  },
+  "portfolio": {
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title": "Canadian Wanderlust",
+        "category": "My Travel Blog for my post-university travels",
+        "image": "canadian-wanderlust.jpg",
+        "url": "https://www.canadianwanderlust.com"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title": "Fury Fighting Gear",
+        "category": "(offline now) A fighting gear company I started",
+        "image": "fury-fighting-gear.jpg",
+        "url": "http://www.timbakerdev.com"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "Original Thai Food",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "original-thai-food.jpg",
+        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "resume-website.jpg",
+        "url": "http://www.timbakerdev.com"
       },
       {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "title": "Smirkspace",
+        "category": "(MVP Only) A React and Meteor based chat University project.",
+        "image": "smirkspace.jpg",
+        "url": "http://www.smirkspace.com"
       }
     ]
   },
-  "testimonials":{
-    "testimonials":[
+  "testimonials": {
+    "testimonials": [
       {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
+        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user": "Kareem Abdul Jabbar"
       },
       {
-        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user":"Steve Wozniak... impersonator"
+        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
       }
     ]
   }

@@ -60,9 +60,13 @@ header .banner {
 }
 
 header .banner-text { width: 100%; }
-header .banner-text h1 {
+header .banner-text h1 span{
    font: 80px/1.3em 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #FFFF;
+}
+header .banner-text h1 {
+   font: 80px/1.3em 'opensans', sans-serif;
+   color: #A8A8A8;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
@@ -109,8 +113,8 @@ header .social li a:hover
    bottom: 80px;
    left: 45%;
    margin-left: -40px;
-   color: #fff;
-   background-color: #474747;  
+   color: #474747;
+   background-color: #FFFFFF;  
    display: block;   
    font-size: 22px;
    line-height: 25px;
@@ -122,8 +126,8 @@ header .social li a:hover
    transition: all .3s ease-in-out;
 } 
 header .scrolldown a:hover { 
-   color: #474747; 
-   background-color: white;
+   color: #FFFFFF; 
+   background-color: #474747;
 }
 
 /* primary navigation
@@ -255,11 +259,12 @@ ul#nav li.current a {
 #about .main-col { padding-right: 5%; }
 #about .download .button {
    margin-top: 6px;
-   background: #444;
+   background: #FFF;
+   color:#474747
 }
 #about .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
+   background: #474747;
+   color: #FFF;
 }
 #about .download .button i {
    margin-right: 15px;
@@ -285,6 +290,14 @@ ul#nav li.current a {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
+}
+.center, .feature-item {
+   text-align: center;
+}
+.feature-item {
+   margin-top: 2.5em;
+   padding-left: 2em;
+   padding-right: 2em;
 }
 #resume h1 span {
    border-bottom: 3px solid #11ABB0;

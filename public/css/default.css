@@ -453,6 +453,9 @@ img {
    max-width: 100%;
    height: auto;
 }
+img.skill {
+   max-width: 65%;
+}
 img.pull-right { margin: 12px 0px 0px 18px; }
 img.pull-left { margin: 12px 18px 0px 0px; }
 
@@ -465,11 +468,11 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
    font: 16px/30px 'opensans-bold', sans-serif;
-   background: #474747;
+   background: #FFF;
    display: inline-block;
 	text-decoration: none;
    letter-spacing: 0;
-   color: #fff;
+   color: #474747;
 	padding: 12px 20px;
 	margin-bottom: 18px;
    border: none;
@@ -493,8 +496,8 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-   background: #474747;
-   color: #fff;
+   background: #fff;
+   color: #474747;
 }
 
 .button:active,
@@ -502,8 +505,8 @@ button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
-   background: #474747;
-   color: #fff;
+   background: #FFF;
+   color: #474747;
 }
 
 .button.full-width,
@@ -638,12 +641,13 @@ input[type="checkbox"] { display: inline; }
 .row .one         { width: 8.33333%; }
 .row .two         { width: 16.66667%; }
 .row .three       { width: 25%; }
+.row .threea      { width: 30%; }
 .row .four        { width: 33.33333%; }
 .row .five        { width: 41.66667%; }
 .row .six         { width: 50%; }
 .row .seven       { width: 58.33333%; }
 .row .eight       { width: 66.66667%; }
-.row .nine        { width: 75%; }
+.row .nine        { width: 70%; }
 .row .ten         { width: 83.33333%; }
 .row .eleven      { width: 91.66667%; }
 .row .twelve      { width: 100%; }
