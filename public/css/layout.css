@@ -940,7 +940,7 @@ call-to-action .button {
 	background: #0D0D0D;
 }
 #contact span.required {
-	color: #11ABB0;
+	color: #EBEEEE;
 	font-size: 13px;
 }
 #message-warning, #message-success {
@@ -1011,6 +1011,7 @@ footer .copyright li {
     margin: 0;
     padding: 0;
     line-height: 24px;
+    color:#fff
 }
 .ie footer .copyright li {
    display: inline;
@@ -1019,7 +1020,7 @@ footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: #095153;
+    color: #525252;
 }
 footer .copyright  li:first-child:before {
     display: none;
@@ -1036,7 +1037,12 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+}
+footer .social-links li a { color: #fff; }
+
+footer .social-links li a:hover 
+{ 
+   color: #474747;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
@@ -1055,6 +1061,7 @@ footer .social-links li:first-child { margin-left: 0; }
 	width: 60px;
 	height: 60px;
 	background-color: #525252;
+   color: #fff;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
@@ -1062,9 +1069,12 @@ footer .social-links li:first-child { margin-left: 0; }
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 
-   color: #fff;
+   
    font-size: 21px;
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { 
+   background-color: #fff;
+   color: #525252;   
+}

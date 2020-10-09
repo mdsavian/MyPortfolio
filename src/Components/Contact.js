@@ -1,17 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Bounce, Zoom } from 'react-reveal';
+import axios from 'axios';
 
 class Contact extends Component {
+
+
    render() {
 
       if (this.props.data) {
-         var name = this.props.data.name;
-         var street = this.props.data.address.street;
-         var city = this.props.data.address.city;
-         var state = this.props.data.address.state;
-         var zip = this.props.data.address.zip;
-         var phone = this.props.data.phone;
-         var email = this.props.data.email;
          var message = this.props.data.contactmessage;
       }
 
@@ -35,36 +31,36 @@ class Contact extends Component {
             <div className="row">
                <div className="twelve">
 
-                  <form action="" method="post" id="contactForm" name="contactForm" class="formContact">
+                  <form action="" method="post" id="contactForm" name="contactForm" className="formContact">
                      <fieldset>
 
                         <Zoom>
                            <div>
-                              <label htmlFor="contactName">Name <span className="required">*</span></label>
-                              <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange} />
+                              <label htmlFor="name">Name <span className="required">*</span></label>
+                              <input type="text" defaultValue="" size="35" id="name" name="name" onChange={this.handleChange} />
                            </div>
                         </Zoom>
 
                         <Zoom>
                            <div>
-                              <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                              <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange} />
+                              <label htmlFor="email">Email <span className="required">*</span></label>
+                              <input type="text" defaultValue="" size="35" id="email" name="email" onChange={this.handleChange} />
                            </div>
                         </Zoom>
 
                         <Zoom>
                            <div>
-                              <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                              <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                              <label htmlFor="message">Message <span className="required">*</span></label>
+                              <textarea cols="50" rows="15" id="message" name="message"></textarea>
                            </div>
                         </Zoom>
 
                         <Zoom>
                            <div>
-                              <button className="submit">Submit</button>
-                              <span id="image-loader">
+                              <button className="submit" type="button" onClick={() => { send() }}>Submit</button>
+                              {/* <span id="image-loader">
                                  <img alt="" src="images/loader.gif" />
-                              </span>
+                              </span> */}
                            </div>
                         </Zoom>
                      </fieldset>
@@ -75,25 +71,27 @@ class Contact extends Component {
                      <i className="fa fa-check"></i>Your message was sent, thank you!<br />
                   </div>
                </div>
-
-
-               {/* <aside className="four columns footer-widgets">
-                  <div className="widget widget_contact">
-
-                     <h4>Address and Phone</h4>
-                     <p className="address">
-                        {name}<br />
-                        {street} <br />
-                        {city}, {state} {zip}<br />
-                        <span>{phone}</span>
-                     </p>
-                  </div>
-
-               </aside> */}
             </div>
          </section>
       );
    }
+}
+
+const send = () => {
+
+   let data = JSON.stringify({
+      "name": window.document.getElementById('name').value,
+      "email": window.document.getElementById('email').value,
+      "message": window.document.getElementById('message').value
+   });
+   axios.post('http://localhost:3030/send',
+      {
+         data: data,
+         headers: {
+            "Content-Type": "application/json;",
+         }
+      })
+      .then(response => { console.log(response.data); })
 }
 
 export default Contact;

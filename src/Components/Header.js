@@ -8,7 +8,6 @@ class Header extends Component {
    }
 
    onHeaderTyped = () => {
-      console.log("opa eae");
       this.setState({ renderDescription: true });
    }
    render() {

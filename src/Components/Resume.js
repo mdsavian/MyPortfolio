@@ -18,9 +18,9 @@ class Resume extends Component {
         </div>
       })
       var skills = this.props.data.skills.map(function (skill) {
-        return <div key={skill.name} class="columns feature-item" >
+        return <div key={skill.name} className="columns feature-item" >
           <Bounce bottom>
-            <img class="skill" alt={skill.name} title={skill.name} src={skill.image} />
+            <img className="skill" alt={skill.name} title={skill.name} src={skill.image} />
             <h5>{skill.name}</h5>
             <p>{skill.description}</p>
           </Bounce>
@@ -51,13 +51,13 @@ class Resume extends Component {
               <h1><span>I canp help you with</span></h1>
             </div>
 
-            <div class="nine columns main-col">
-              <p class="lead center">I'm a tinkerer and am always interested in playing around
+            <div className="nine columns main-col">
+              <p className="lead center">I'm a tinkerer and am always interested in playing around
           with new technologies but these are the ones that have really won me over</p>
             </div>
           </Bounce>
 
-          <ul class="bgrid-quarters s-bgrid-thirds cf">
+          <ul className="bgrid-quarters s-bgrid-thirds cf">
             {skills}
           </ul>
         </div>
