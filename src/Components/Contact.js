@@ -1,6 +1,7 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { Bounce, Zoom } from 'react-reveal';
 import axios from 'axios';
+import * as $ from 'jquery';
 
 class Contact extends Component {
 
@@ -58,17 +59,20 @@ class Contact extends Component {
                         <Zoom>
                            <div>
                               <button className="submit" type="button" onClick={() => { send() }}>Submit</button>
-                              {/* <span id="image-loader">
-                                 <img alt="" src="images/loader.gif" />
-                              </span> */}
                            </div>
                         </Zoom>
                      </fieldset>
+
                   </form>
 
-                  <div id="message-warning"> Error boy</div>
+                  <div id="div-loader">
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif" />
+                     </span>
+                  </div>
+                  <div id="message-warning"> </div>
+
                   <div id="message-success">
-                     <i className="fa fa-check"></i>Your message was sent, thank you!<br />
                   </div>
                </div>
             </div>
@@ -79,11 +83,52 @@ class Contact extends Component {
 
 const send = () => {
 
+   $('#message-warning').fadeOut();
+   $('#message-success').fadeOut();
+
+   let name = window.document.getElementById('name').value;
+   let email = window.document.getElementById('email').value;
+   let message = window.document.getElementById('message').value;
+   cleanField("name");
+   cleanField("email");
+   cleanField("message");
+
+   if (!name || name === '') {
+      $('#message-warning').html("Name is required.");
+      assignErrorField("name");
+      callMessage('#message-warning')
+      return;
+   }
+
+   if (!email || email === '') {
+      $('#message-warning').html("Email is required.");
+      assignErrorField("email");
+      callMessage('#message-warning');
+      return;
+   }
+   else if (!validateEmail(email))
+   {
+      $('#message-warning').html("Email is invalid.");
+      assignErrorField("email");
+      callMessage('#message-warning');
+      return;
+   }
+
+   if (!message || message === '') {
+      $('#message-warning').html("Message is required.");
+      assignErrorField("message");
+      callMessage('#message-warning');
+      return;
+   }
+
    let data = JSON.stringify({
-      "name": window.document.getElementById('name').value,
-      "email": window.document.getElementById('email').value,
-      "message": window.document.getElementById('message').value
+      "name": name,
+      "email": email,
+      "message": message
    });
+
+   $('#image-loader').fadeIn();
+
    axios.post('http://localhost:3030/send',
       {
          data: data,
@@ -91,7 +136,49 @@ const send = () => {
             "Content-Type": "application/json;",
          }
       })
-      .then(response => { console.log(response.data); })
+      .then(response => {
+
+         if (response.data && response.data.accepted.length > 0) {
+            $('#message-success').html("Email was successfully sent. Thank you for contacting me.");
+            callMessage('#message-success');
+            $('#image-loader').fadeOut();
+         }
+
+      }).catch(error => {
+         $('#message-warning').html("Can't send email. Contact me via normal email please.");
+         callMessage('#message-warning')
+         $('#image-loader').fadeOut();
+      })
 }
 
+const assignErrorField = (nameField) => {
+
+   let field = window.document.getElementById(nameField);
+   if (field) {
+      field.focus();
+      field.style.borderColor = "crimson";
+      field.style.borderStyle = "solid";
+      field.style.borderWidth = "2px";
+   }
+}
+
+const cleanField = (nameField) => {
+
+   let field = window.document.getElementById(nameField);
+   if (field) {
+      field.focus();
+      field.style.borderColor = "";
+      field.style.borderStyle = "";
+      field.style.borderWidth = "";
+   }
+}
+const validateEmail= (email) => {
+   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+   return re.test(String(email).toLowerCase());
+}
+
+const callMessage = (message) => {
+   $(message).fadeIn();
+   $('#message-warning').delay(3500).fadeOut(800);
+}
 export default Contact;

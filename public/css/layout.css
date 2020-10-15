@@ -848,7 +848,7 @@ call-to-action .button {
    padding-bottom: 102px;
    color: #636363;
 }
-#contact .section-head { margin-bottom: 42px; }
+
 
 #contact a, #contact a:visited  { color: #11ABB0; }
 #contact a:hover, #contact a:focus { color: #fff; }
@@ -883,9 +883,10 @@ call-to-action .button {
    
 }
 #contact p.lead {
-   font: 18px/36px 'opensans-light', sans-serif;
+   font: 22px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
    padding-bottom: 12px;
+   color: #FFF;
 }
 #contact .header-col { padding-top: 6px; }
 
@@ -907,7 +908,7 @@ call-to-action .button {
 #contact input,
 #contact textarea,
 #contact select {
-   padding: 12px 20px;
+   padding: 7px 20px;
 	color: #373233;
 	background: #eee;
 	border: 0;
@@ -932,7 +933,7 @@ call-to-action .button {
    height: auto;
    display: inline-block;
 	border-radius: 1000px;
-   margin-left: 33%;
+   margin-left: 30%;
    width:250px;
 }
 #contact button.submit:hover {
@@ -943,26 +944,36 @@ call-to-action .button {
 	color: #EBEEEE;
 	font-size: 13px;
 }
+
+#div-loader {
+   display: none;
+	background: transparent;
+   width: 50%;
+   margin-left: 25%;
+   justify-content:  center;
+   display: flex;
+}
+
 #message-warning, #message-success {
    display: none;
 	background: #0F0F0F;
 	padding: 24px 24px;
 	margin-bottom: 36px;
-   width: 65%;
-   margin-left: 26%;
+   width: 50%;
+   margin-left: 25%;
+   font-size: 18px;
+   text-align: center;
+   text-transform: uppercase;
 }
 #message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
+#message-success { color: greenyellow; }
 
 #message-warning i,
 #message-success i {
    margin-right: 10px;
 }
-#image-loader {
+#image-loader {   
    display: none;
-   position: relative;
-   left: 18px;
-   top: 17px;
 }
 
 
@@ -1077,4 +1088,10 @@ footer .social-links li:first-child { margin-left: 0; }
 #go-top a:hover { 
    background-color: #fff;
    color: #525252;   
+}
+
+.input-error{
+   border-color: crimson;
+   border-style: solid;
+   border-width: 2px;
 }
