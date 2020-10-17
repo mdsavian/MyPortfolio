@@ -61,11 +61,12 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 span{
-   font: 80px/1.3em 'opensans-bold', sans-serif;
+   font: 80px/1.3em 'Raleway', sans-serif;
+   font-weight: bold;
    color: #FFFF;
 }
 header .banner-text h1 {
-   font: 80px/1.3em 'opensans', sans-serif;
+   font: 80px/1.3em 'Raleway', sans-serif;
    color: #A8A8A8;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
@@ -115,6 +116,7 @@ header .social li a:hover
    margin-left: -40px;
    color: #474747;
    background-color: #FFFFFF;  
+   border: 2px solid #474747;
    display: block;   
    font-size: 22px;
    line-height: 25px;
@@ -127,6 +129,7 @@ header .social li a:hover
 } 
 header .scrolldown a:hover { 
    color: #FFFFFF; 
+   border: 2px solid #ffffff;
    background-color: #474747;
 }
 
@@ -141,8 +144,9 @@ header .scrolldown a:hover {
 
 /* nav-wrap */
 #nav-wrap {
-   font: 12px 'opensans-bold', sans-serif;
+   font: 12px 'Raleway', sans-serif;
    width: 100%;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
@@ -230,8 +234,9 @@ ul#nav li.current a {
 #about a:hover, #about a:focus { color: #11ABB0; }
 
 #about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
+   font: 22px/30px 'Raleway', sans-serif;
    color: #fff;
+   font-weight: bold;
    margin-bottom: 12px;
 }
 #about p {
@@ -260,11 +265,13 @@ ul#nav li.current a {
 #about .download .button {
    margin-top: 6px;
    background: #FFF;
-   color:#474747
+   color:#474747;
+   border: 2px solid #474747;
 }
 #about .download .button:hover {
    background: #474747;
    color: #FFF;
+   border: 2px solid #fff;
 }
 #about .download .button i {
    margin-right: 15px;
@@ -287,8 +294,9 @@ ul#nav li.current a {
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 18px/24px 'Raleway', sans-serif;
    text-transform: uppercase;
+   font-weight: bold;
    letter-spacing: 1px;
 }
 .center, .feature-item {
@@ -304,7 +312,8 @@ ul#nav li.current a {
    padding-bottom: 6px;
 }
 #resume h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
+   font: 25px/30px 'Raleway', sans-serif;
+   font-weight: bold;
 }
 
 #resume .header-col { padding-top: 9px; }
@@ -326,7 +335,7 @@ ul#nav li.current a {
    margin-left: 5px;
 }
 #resume .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
+   font: 15px/24px 'Raleway', sans-serif;
    margin-top: 6px;
 }
 
@@ -352,7 +361,8 @@ ul#nav li.current a {
   	border-radius: 3px;
 }
 .bars li em {
-	font: 15px 'opensans-bold', sans-serif;
+   font: 15px 'Raleway', sans-serif;
+   font-weight: bold;
    color: #313131;
 	text-transform: uppercase;
    letter-spacing: 2px;
@@ -467,12 +477,20 @@ ul#nav li.current a {
 
 #portfolio {
    background: #ebeeee;
-   padding-top: 90px;
-   padding-bottom: 60px;
+   padding-top: 60px;
 }
 #portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   font: 40px/24px 'Raleway', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 40px;
+
+}
+
+#portfolio h2 {
+   font: 20px/24px 'Raleway', sans-serif;
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
@@ -480,12 +498,14 @@ ul#nav li.current a {
 }
 
 /* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; }
+#portfolio-wrapper .columns { margin-bottom: 36px; width: 33%;}
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
    position: relative;
-
+   border-radius: 10px;
+   align-items: center;
+   
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -497,6 +517,47 @@ ul#nav li.current a {
    cursor: pointer;
 }
 
+.portfolio-item .item-wrap a {
+   display: block;
+   cursor: pointer;
+}
+
+.portfolio-item .item-wrap .text{
+   color: #313131;
+   text-align: center;
+   transition: all 0.3s ease-in-out;
+   z-index: 2;
+   width: 100%;
+}
+
+.portfolio-item .item-wrap .learn-more-button{
+   margin-top: 50px;
+   background: #FFF;
+   color:#474747;
+   border:2px solid #474747;   
+   text-align: center;
+   font: 24px/24px 'Raleway';
+   width: 60%;
+   text-transform: uppercase;
+}
+
+.portfolio-item .item-wrap .learn-more-button:hover {
+   background: #474747;
+   color: #FFF;
+   border: 2px solid #fff;
+}
+
+.portfolio-item .item-wrap .bold{
+   font: 30px/24px 'Raleway';
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.portfolio-item .item-wrap .highlight{
+   color: #8F8F8F;
+   
+   font: 20px/24px 'Raleway';
+}
+
 /* overlay */
 .portfolio-item .item-wrap .overlay {
    position: absolute;
@@ -504,17 +565,18 @@ ul#nav li.current a {
    top: 0;
    width: 100%;
    height: 100%;
-
 	opacity: 0;
-	-moz-opacity: 0;
+   -moz-opacity: 0;
+   display: flex;
+   align-items: center;
 	filter:alpha(opacity=0);
 
-   -webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
+   -webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 
-   background: url(../images/overlay-bg.png) repeat;
+   background: #fff repeat;
 }
 .portfolio-item .item-wrap .link-icon {
    display: block;
@@ -545,11 +607,12 @@ ul#nav li.current a {
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 {
-   font: 14px/21px 'opensans-bold', sans-serif;
+   font: 14px/21px 'Raleway', sans-serif;
+   font-weight: bold;
    color: #fff;
 }
 .portfolio-item .portfolio-item-meta p {
-   font: 12px/18px 'opensans-light', sans-serif;
+   font: 12px/18px 'Raleway' lighter, sans-serif;
    color: #c6c7c7;
    margin-bottom: 0;
 }
@@ -575,17 +638,19 @@ ul#nav li.current a {
 }
 .popup-modal .description-box { padding: 12px 36px 18px 36px; }
 .popup-modal .description-box h4 {
-   font: 15px/24px 'opensans-bold', sans-serif;
-	margin-bottom: 12px;
+   font: 15px/24px 'Raleway', sans-serif;
+   font-weight: bold;
+   margin-bottom: 12px;
+   
    color: #111;
 }
 .popup-modal .description-box p {
-	font: 14px/24px 'opensans-regular', sans-serif;
+	font: 14px/24px 'Raleway', sans-serif;
    color: #A1A1A1;
    margin-bottom: 12px;
 }
 .popup-modal .description-box .categories {
-   font: 11px/21px 'opensans-light', sans-serif;
+   font: 11px/21px 'Raleway', sans-serif;
    color: #A1A1A1;
    text-transform: uppercase;
    letter-spacing: 2px;
@@ -602,7 +667,8 @@ ul#nav li.current a {
 }
 .popup-modal .link-box a {
    color: #fff;
-	font: 11px/21px 'opensans-bold', sans-serif;
+   font: 11px/21px 'Raleway', sans-serif;
+   font-weight: bold;
 	text-transform: uppercase;
    letter-spacing: 3px;
    cursor: pointer;
@@ -642,7 +708,8 @@ ul#nav li.current a {
    padding-bottom: 48px;
 }
 #call-to-action h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 18px/24px 'Raleway', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
@@ -662,7 +729,8 @@ ul#nav li.current a {
    margin-top: 12px;
 }
 #call-to-action h2 {
-   font: 28px/36px 'opensans-bold', sans-serif;
+   font: 28px/36px 'Raleway', sans-serif;
+   font-weight: bold;
    color: #EBEEEE;
    margin-bottom: 6px;
 }
@@ -685,7 +753,7 @@ call-to-action .button {
    color: #0D0D0D;
 }
 #call-to-action p span {
-	font-family: 'opensans-semibold', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #D8D8D8;
 }
 
@@ -709,7 +777,8 @@ call-to-action .button {
    padding-bottom: 66px;
 }
 #testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 18px/24px 'Raleway', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
@@ -854,7 +923,8 @@ call-to-action .button {
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 18px/24px 'Raleway', sans-serif;
+   font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #EBEEEE;
@@ -873,17 +943,18 @@ call-to-action .button {
 }
 
 #contact h4 {
-   font: 24px/24px 'opensans-bold', sans-serif;
+   font: 24px/24px 'Raleway', sans-serif;
+   font-weight: bold;
    color: #EBEEEE;
    margin-bottom: 6px;
 }
 
 #contact p {
-   font: 18px/24px 'opensans-light', sans-serif;
+   font: 18px/24px 'Raleway' lighter, sans-serif;
    
 }
 #contact p.lead {
-   font: 22px/36px 'opensans-light', sans-serif;
+   font: 22px/36px 'Raleway', sans-serif;
    padding-right: 3%;
    padding-bottom: 12px;
    color: #FFF;
@@ -899,7 +970,8 @@ call-to-action .button {
 /* contact form */
 #contact form { margin-bottom: 30px; }
 #contact label {
-   font: 20px/24px 'opensans-bold', sans-serif;
+   font: 20px/24px 'Raleway' sans-serif;
+   font-weight: bold;
    margin: 12px 0;
    color: #EBEEEE;
 	display: inline-block;
@@ -926,7 +998,7 @@ call-to-action .button {
 #contact button.submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color:#0D0D0D;
+	color:#303030;
    background: #fff;
 	border: none;
    cursor: pointer;
@@ -935,9 +1007,11 @@ call-to-action .button {
 	border-radius: 1000px;
    margin-left: 30%;
    width:250px;
+   border: 2px solid #303030;
 }
 #contact button.submit:hover {
-	color: #fff;
+   color: #fff;
+   border: 2px solid #fff;
 	background: #0D0D0D;
 }
 #contact span.required {
@@ -990,7 +1064,7 @@ call-to-action .button {
    display: block;
 }
 #twitter li b a {
-   font: 13px/36px 'opensans-regular', Sans-serif;
+   font: 13px/36px 'Raleway', Sans-serif;
    color: #474747 !important;
    border: none;
 }
@@ -1073,6 +1147,7 @@ footer .social-links li:first-child { margin-left: 0; }
 	height: 60px;
 	background-color: #525252;
    color: #fff;
+   border: 2px solid #FFF;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
@@ -1088,6 +1163,7 @@ footer .social-links li:first-child { margin-left: 0; }
 #go-top a:hover { 
    background-color: #fff;
    color: #525252;   
+   border: 2px solid #525252;
 }
 
 .input-error{

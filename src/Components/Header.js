@@ -48,7 +48,7 @@ class Header extends Component {
                      this.state.renderDescription ?
                         (<LightSpeed left>
                            <h3>A <span>{occupation}</span> from {country} specializing in <span> building complex, fast and high-quality backend softwares for companies.
-                           </span> Actually I'm working as <span>full stack software engineer on a web project for telemedicine</span> in Brazil.</h3>
+                           </span> Actually I'm working as <span>backend software engineer on a web project for telemedicine</span> in Brazil.</h3>
                         </LightSpeed>)
                         : null}
                   <hr />

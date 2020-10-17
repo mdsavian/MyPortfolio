@@ -143,7 +143,7 @@ html {
 
 body {
    background: #fff;
-   font-family: 'opensans-regular', sans-serif;
+   font-family: 'Raleway', sans-serif;
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
@@ -159,8 +159,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
    color: #313131;
-	font-family: 'opensans-bold', sans-serif;
-   font-weight: normal;
+	font-family: 'Raleway', sans-serif;
+   font-weight: bold;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
@@ -473,6 +473,7 @@ input[type="button"] {
 	text-decoration: none;
    letter-spacing: 0;
    color: #474747;
+   border-color: #474747;
 	padding: 12px 20px;
 	margin-bottom: 18px;
    border: none;
@@ -498,6 +499,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover {
    background: #fff;
    color: #474747;
+   border-color: #fff;
 }
 
 .button:active,
@@ -598,7 +600,7 @@ input[type="checkbox"] { display: inline; }
 --------------------------------------------------------------- */
 .row {
    width: 96%;
-   max-width: 1020px;
+   
    margin: 0 auto;
 }
 /* fixed width for IE8 */

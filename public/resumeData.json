@@ -2,7 +2,7 @@
   "main": {
     "name": "Marlon Savian",
     "occupation": "Software Engineer",
-    "description": "I'm specializing in <span> building complex, fast and high-quality backend softwares for companies.\b</span> Actually I'm working as \b<span>full stack software engineer on a web project </span> for telemedicine in Brazil.",
+    "description": "I'm specializing in <span> building complex, fast and high-quality backend softwares for companies.\b</span> Actually I'm working as \b<span>backend software engineer on a web project </span> for telemedicine in Brazil.",
     "image": "profilepic.png",
     "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactmessage": "If you have a project that may be a good fit, or maybe you’d like to chat about a project please fill in the form below and I’ll get back within 1-2 days.",
