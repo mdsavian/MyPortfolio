@@ -498,7 +498,12 @@ ul#nav li.current a {
 }
 
 /* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; width: 33%;}
+#portfolio-wrapper .columns { 
+   margin-bottom: 15px;
+   margin-right: -25px;
+    width: 33%;
+   }
+
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
@@ -553,12 +558,103 @@ ul#nav li.current a {
    margin-bottom: 10px;
 }
 .portfolio-item .item-wrap .highlight{
-   color: #8F8F8F;
-   
+   color: #8F8F8F;   
    font: 20px/24px 'Raleway';
 }
 
-/* overlay */
+.portfolio-modal{     
+   z-index: 1000; 
+   position: absolute;
+   width: 55%;
+   height: 100vh;   
+   inset: 50% auto auto 50%;   
+   background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+   overflow: auto;
+   border-radius: 4px;
+   outline: currentcolor none medium;   
+   margin-right: -50%;
+   transform: translate(-50%, -50%);
+}
+
+.portfolio-modal-overlay {
+   z-index: 1000; 
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: transparent;
+ }
+
+ .portfolio-modal .info-box{     
+   border-top: 3px solid #1b242f;
+   box-sizing: border-box;
+   color: #313131;
+   height: 260px;
+   padding: 35px 60px 0px 25px
+}
+
+.portfolio-modal .title{     
+   font-family: "Raleway";   
+   font-size: 28pt;
+   font-weight: 600;
+   line-height: 30pt;
+}
+
+.portfolio-modal .tag{     
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   color: #8F8F8F;
+   display: block;
+   font-family: "Raleway";   
+   font-size: 15pt;
+   font-weight: 600;
+   padding-bottom: 15px;
+}
+
+.portfolio-modal .detail {
+   font-size: 10pt;
+   line-height: 15pt;
+   margin-top: 10px;
+ }
+ .portfolio-modal .button {
+   margin-top: 42px;
+   background: #FFF;
+   color:#474747;
+   border:2px solid #474747;   
+   text-align: center;
+   font: 20px/8px 'Raleway';
+   text-transform: uppercase;
+}
+ 
+ .portfolio-modal .close {
+   margin-top: 35px;
+   position: fixed;
+   right: 70px;
+   background: #FFF;
+   color:#474747;
+   border:2px solid #474747;   
+   text-align: center;
+   font: 20px/8px 'Raleway';
+   text-transform: uppercase;
+   border-radius: 50%;
+   padding: 15px;
+}
+
+.portfolio-modal .button:hover {
+   background: #474747;
+   color: #FFF;
+   border: 2px solid #fff;
+}
+
+.portfolio-modal .close:hover {
+   background: #474747;
+   color: #FFF;
+   border: 2px solid #fff;
+}
+ .carousel{
+   height: 350px;   
+}
+
 .portfolio-item .item-wrap .overlay {
    position: absolute;
    left: 0;

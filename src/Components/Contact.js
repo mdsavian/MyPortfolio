@@ -38,14 +38,14 @@ class Contact extends Component {
                         <Zoom>
                            <div>
                               <label htmlFor="name">Name <span className="required">*</span></label>
-                              <input type="text" defaultValue="" size="35" id="name" name="name" onChange={this.handleChange} />
+                              <input type="text" defaultValue="" size="35" id="name" name="name" />
                            </div>
                         </Zoom>
 
                         <Zoom>
                            <div>
                               <label htmlFor="email">Email <span className="required">*</span></label>
-                              <input type="text" defaultValue="" size="35" id="email" name="email" onChange={this.handleChange} />
+                              <input type="text" defaultValue="" size="35" id="email" name="email" />
                            </div>
                         </Zoom>
 

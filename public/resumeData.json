@@ -127,32 +127,47 @@
     "projects": [
       {
         "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
+        "language":"teste 124",
+        "category": "(offline now) A fighting gear company I started",
+        "description": "My Travel Blog for my post-university travels",
         "image": "canadian-wanderlust.jpg",
+        "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
         "url": "https://www.canadianwanderlust.com"
       },
       {
         "title": "Fury Fighting Gear",
+        "language":"teste 124",
         "category": "(offline now) A fighting gear company I started",
+        "description": "My Travel Blog for my post-university travels",
         "image": "fury-fighting-gear.jpg",
+        "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",        
         "url": "http://www.timbakerdev.com"
       },
       {
         "title": "Original Thai Food",
+        "language":"teste 124",
         "category": "Website I built for a restaurant I like in Thailand",
+        "description": "My Travel Blog for my post-university travels",
         "image": "original-thai-food.jpg",
+        "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
         "url": "http://www.timbakerdev.com/originalthaifood.github.io"
       },
       {
         "title": "Resume Website",
+        "language":"teste 124",
         "category": "A React based resume website template",
+        "description": "My Travel Blog for my post-university travels",
         "image": "resume-website.jpg",
+        "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
         "url": "http://www.timbakerdev.com"
       },
       {
         "title": "Smirkspace",
+        "language":"teste 124",
         "category": "(MVP Only) A React and Meteor based chat University project.",
+        "description": "My Travel Blog for my post-university travels",
         "image": "smirkspace.jpg",
+        "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
         "url": "http://www.smirkspace.com"
       }
     ]
