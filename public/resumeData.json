@@ -126,50 +126,45 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "language":"teste 124",
+        "title": "Argo App",
+        "language":".Net / Xamarin",
+        "nameModal":"showModalOne",
         "category": "(offline now) A fighting gear company I started",
         "description": "My Travel Blog for my post-university travels",
-        "image": "canadian-wanderlust.jpg",
-        "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "image": "ArgoApp0.jpeg",
+        "imagesCarousel":"ArgoApp1.jpeg,ArgoApp2.jpeg,ArgoApp3.jpeg,ArgoApp4.jpeg,ArgoApp0.jpeg",
+        "url": "https://play.google.com/store/apps/details?id=com.argosistemas.argo"
       },
       {
-        "title": "Fury Fighting Gear",
-        "language":"teste 124",
+        "title": "GerCli",
+        "language":".Net Core 2.0 / Angular 7",
+        "nameModal":"showModalTwo",
         "category": "(offline now) A fighting gear company I started",
         "description": "My Travel Blog for my post-university travels",
-        "image": "fury-fighting-gear.jpg",
-        "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",        
-        "url": "http://www.timbakerdev.com"
+        "image": "Gercli0.png",
+        "imagesCarousel":"Gercli0.png,Gercli1.png",        
+        "url": "https://github.com/mdsavian/AppControleMedico"
       },
       {
-        "title": "Original Thai Food",
-        "language":"teste 124",
+        "title": "Hotel Reservation",
+        "language":"ReactJs",
+        "nameModal":"showModalThree",
         "category": "Website I built for a restaurant I like in Thailand",
         "description": "My Travel Blog for my post-university travels",
-        "image": "original-thai-food.jpg",
-        "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "image": "hotel0.png  ",
+        "imagesCarousel":"hotel0.png,hotel1.png",
+        "url": "https://www.youtube.com/watch?v=LXJOvkVYQqA"
       },
       {
-        "title": "Resume Website",
-        "language":"teste 124",
+        "title": "Portfolio Website",
+        "language":"ReactJs / Node Js",
+        "nameModal":"showModalFour",
         "category": "A React based resume website template",
         "description": "My Travel Blog for my post-university travels",
         "image": "resume-website.jpg",
         "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
         "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "language":"teste 124",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "description": "My Travel Blog for my post-university travels",
-        "image": "smirkspace.jpg",
-        "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
-        "url": "http://www.smirkspace.com"
-      }
+      }      
     ]
   },
   "testimonials": {

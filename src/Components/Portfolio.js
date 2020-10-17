@@ -9,7 +9,10 @@ class Portfolio extends Component {
   constructor() {
     super();
     this.state = {
-      showModal: false
+      showModalOne: false,
+      showModalTwo: false,
+      showModalThree: false,
+      showModalFour: false
     };
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -19,12 +22,14 @@ class Portfolio extends Component {
     Modal.setAppElement('body');
   }
 
-  handleOpenModal() {
-    this.setState({ showModal: true });
+  handleOpenModal(nameModal) {
+    console.log(nameModal)
+    this.setState({ [nameModal]: true });
   }
 
-  handleCloseModal() {
-    this.setState({ showModal: false });
+  handleCloseModal(nameModal) {
+    console.log(nameModal)
+    this.setState({ [nameModal]: false });
   }
 
   render() {
@@ -33,6 +38,13 @@ class Portfolio extends Component {
       var projects = this.props.data.projects.map((projects) => {
 
         var projectImage = 'images/portfolio/' + projects.image;
+        let carouselImages = projects.imagesCarousel.split(',').map((images) => {
+
+          var image = 'images/portfolio/' + images;
+          return <div>
+            <img src={image} alt={projects.title} />
+          </div>
+        });
 
         return (
           <React.Fragment key={projects.title}>
@@ -40,7 +52,7 @@ class Portfolio extends Component {
               <div className="item-wrap">
                 <div>
 
-                  <img alt={projects.title} src={projectImage} />
+                  <img classname="image-portfolio" alt={projects.title} src={projectImage} />
                   <div className="overlay">
                     <div className="text">
 
@@ -49,7 +61,7 @@ class Portfolio extends Component {
                       </div>
                       <span className="highlight">{projects.language}</span>
                       <br />
-                      <button className="learn-more-button" type="button" onClick={this.handleOpenModal}> Learn more</button>
+                      <button className="learn-more-button" type="button" onClick={() => { this.handleOpenModal(projects.nameModal) }}> Learn more</button>
                     </div>
                   </div>
                 </div>
@@ -59,9 +71,9 @@ class Portfolio extends Component {
 
             <Modal
               shouldCloseOnEsc={true}
-              onRequestClose={this.handleCloseModal}
+              onRequestClose={() => { this.handleCloseModal(projects.nameModal) }}
               shouldCloseOnOverlayClick={true}
-              isOpen={this.state.showModal}
+              isOpen={this.state[projects.nameModal]}
               overlayClassName="portfolio-modal-overlay"
               className="portfolio-modal"
               contentLabel={projects.title}
@@ -70,32 +82,19 @@ class Portfolio extends Component {
                 <Carousel
                   showStatus={false}
                   showThumbs={false}
-                  swipeable={true}
-                  swipeScrollTolerance={3}
                 >
-                  <div>
-                    <img src={projectImage} />
-                    <p className="legend">Legend 1</p>
-                  </div>
-                  <div>
-                    <img src={projectImage} />
-                    <p className="legend">Legend 1</p>
-                  </div>
-                  <div>
-                    <img src={projectImage} />
-                    <p className="legend">Legend 1</p>
-                  </div>
+                  {carouselImages}
                 </Carousel>
               </div>
 
               <div className="info-box">
-                <div className="title">The Mall</div>
-                <div className="tag">PEER GUIDED SHOPPING.</div>
-                <div className="detail">The Mall is a place to follow the latest fashion purchases of your friends and favorite celebrities. Built with Node.js and Handlebars. Features the ability to import thousands of top brands products into one shopping site.</div>                
+                <div className="title">{projects.title}</div>
+                <div className="tag">{projects.category}</div>
+                <div className="detail">{projects.description}.</div>
                 <button className="button" type="button" >View Site</button>
-                <button className="close" type="button" onClick={this.handleOpenModal}><i className="fa fa-times"></i></button>
+                <button className="close" type="button" onClick={() => { this.handleCloseModal(projects.nameModal) }}><i className="fa fa-times"></i></button>
               </div>
-              
+
             </Modal>
           </React.Fragment>
         )
