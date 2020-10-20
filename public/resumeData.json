@@ -131,8 +131,8 @@
         "nameModal":"showModalOne",
         "category": "(offline now) A fighting gear company I started",
         "description": "My Travel Blog for my post-university travels",
-        "image": "ArgoApp0.jpeg",
-        "imagesCarousel":"ArgoApp1.jpeg,ArgoApp2.jpeg,ArgoApp3.jpeg,ArgoApp4.jpeg,ArgoApp0.jpeg",
+        "image": "ArgoApp5.jpeg",
+        "imagesCarousel":"ArgoApp5.jpeg,ArgoApp2.jpeg,ArgoApp3.jpeg,ArgoApp0.jpeg",
         "url": "https://play.google.com/store/apps/details?id=com.argosistemas.argo"
       },
       {
@@ -142,7 +142,7 @@
         "category": "(offline now) A fighting gear company I started",
         "description": "My Travel Blog for my post-university travels",
         "image": "Gercli0.png",
-        "imagesCarousel":"Gercli0.png,Gercli1.png",        
+        "imagesCarousel":"Gercli0.png,Gercli1.png,Gercli2.png,Gercli3.png",        
         "url": "https://github.com/mdsavian/AppControleMedico"
       },
       {
@@ -151,8 +151,8 @@
         "nameModal":"showModalThree",
         "category": "Website I built for a restaurant I like in Thailand",
         "description": "My Travel Blog for my post-university travels",
-        "image": "hotel0.png  ",
-        "imagesCarousel":"hotel0.png,hotel1.png",
+        "image": "hotel0.png",
+        "imagesCarousel":"hotel0.png,hotel1.png,hotel2.png",
         "url": "https://www.youtube.com/watch?v=LXJOvkVYQqA"
       },
       {

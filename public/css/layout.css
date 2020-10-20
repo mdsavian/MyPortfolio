@@ -590,8 +590,8 @@ ul#nav li.current a {
    border-top: 3px solid #1b242f;
    box-sizing: border-box;
    color: #313131;
-   height: 260px;
-   padding: 35px 60px 0px 25px
+   height: 120px;
+   padding: 10px 15px 0px 10px;
 }
 
 .portfolio-modal .title{     
@@ -652,7 +652,7 @@ ul#nav li.current a {
    border: 2px solid #fff;
 }
  .carousel{
-   height: 350px;   
+   height: 400px;   
 }
 
 .portfolio-item .item-wrap .overlay {
