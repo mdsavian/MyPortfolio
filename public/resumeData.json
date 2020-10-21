@@ -131,8 +131,8 @@
         "nameModal":"showModalOne",
         "category": "(offline now) A fighting gear company I started",
         "description": "My Travel Blog for my post-university travels",
-        "image": "ArgoApp5.jpeg",
-        "imagesCarousel":"ArgoApp5.jpeg,ArgoApp2.jpeg,ArgoApp3.jpeg,ArgoApp0.jpeg",
+        "image": "ArgoApp2.jpeg",
+        "imagesCarousel":"ArgoApp1.jpeg,ArgoApp2.jpeg,ArgoApp3.jpeg,ArgoApp4.jpeg",
         "url": "https://play.google.com/store/apps/details?id=com.argosistemas.argo"
       },
       {
@@ -163,7 +163,7 @@
         "description": "My Travel Blog for my post-university travels",
         "image": "resume-website.jpg",
         "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
-        "url": "http://www.timbakerdev.com"
+        "url": ""
       }      
     ]
   },

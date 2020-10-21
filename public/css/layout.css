@@ -213,7 +213,7 @@ ul#nav li a:after {
  }
  
 ul#nav li.current a {
-   font-weight: bold; 
+   font-weight: 750; 
    border-bottom: 4px solid #FFFFFF;
    padding-bottom: 4px; 
 }
@@ -240,6 +240,7 @@ ul#nav li.current a {
    margin-bottom: 12px;
 }
 #about p {
+   font: 16px/30px 'Raleway', sans-serif;
    line-height: 30px;
    color: #7A7A7A;
 }
@@ -479,6 +480,7 @@ ul#nav li.current a {
    background: #ebeeee;
    padding-top: 60px;
 }
+
 #portfolio h1 {
    font: 40px/24px 'Raleway', sans-serif;
    font-weight: bold;
@@ -551,6 +553,7 @@ ul#nav li.current a {
    color: #FFF;
    border: 2px solid #fff;
 }
+
 
 .portfolio-item .item-wrap .bold{
    font: 30px/24px 'Raleway';
@@ -629,7 +632,7 @@ ul#nav li.current a {
  .portfolio-modal .close {
    margin-top: 12px;
    position: fixed;
-   right: 70px;
+   right: 10px;
    background: #FFF;
    color:#474747;
    border:2px solid #474747;   
@@ -651,8 +654,36 @@ ul#nav li.current a {
    color: #FFF;
    border: 2px solid #fff;
 }
+
  .carousel{
    height: 400px;   
+}
+
+.carousel .carousel-button{
+   background: #474747;
+   color:#fff;
+   border:2px solid #fff;   
+   text-align: center;
+   position: 'absolute';
+   z-index: 2;
+   top: 'calc(85%)';
+   width: 70;
+   height: 50;
+   cursor: 'pointer';      
+}
+
+.carousel .carousel-button:hover{
+   background: #fff;
+   color: #474747;
+   border: 2px solid #474747;
+}
+
+.carousel-icon{
+   font-size: 30px;   
+}
+
+.open-image-portfolio{
+   cursor: pointer;
 }
 
 .portfolio-item .item-wrap .overlay {
@@ -1068,7 +1099,7 @@ call-to-action .button {
 /* contact form */
 #contact form { margin-bottom: 30px; }
 #contact label {
-   font: 20px/24px 'Raleway' sans-serif;
+   font: 20px/24px 'Raleway';
    font-weight: bold;
    margin: 12px 0;
    color: #EBEEEE;

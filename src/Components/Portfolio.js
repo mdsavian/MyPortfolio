@@ -23,16 +23,30 @@ class Portfolio extends Component {
   }
 
   handleOpenModal(nameModal) {
-    console.log(nameModal)
     this.setState({ [nameModal]: true });
   }
 
   handleCloseModal(nameModal) {
-    console.log(nameModal)
     this.setState({ [nameModal]: false });
   }
 
+  openImage(image) {
+    window.open(image);
+  }
+
   render() {
+
+    const arrowStyles = {
+      position: 'absolute',
+      zIndex: 2,
+      top: 'calc(85%)',
+      width: 65,
+      height: 55,
+      cursor: 'pointer',
+      background: '#474747',
+      color: '#fff',
+      border: '2px solid #fff',
+    };
 
     if (this.props.data) {
       var projects = this.props.data.projects.map((projects) => {
@@ -41,8 +55,9 @@ class Portfolio extends Component {
         let carouselImages = projects.imagesCarousel.split(',').map((images) => {
 
           var image = 'images/portfolio/' + images;
-          return <div>
-            <img src={image} alt={projects.title} />
+          let openImage = 'images/portfolio/full/' + images
+          return <div className="open-image-portfolio" key={images} onClick={() => { this.openImage(openImage) }}>
+            <img src={image} alt={projects.title} className="open-image-portfolio" />
           </div>
         });
 
@@ -51,8 +66,7 @@ class Portfolio extends Component {
             <Zoom duration={1500}><div className="columns portfolio-item">
               <div className="item-wrap">
                 <div>
-
-                  <img classname="image-portfolio" alt={projects.title} src={projectImage} />
+                  <img alt={projects.title} src={projectImage} />
                   <div className="overlay">
                     <div className="text">
 
@@ -82,6 +96,21 @@ class Portfolio extends Component {
                 <Carousel
                   showStatus={false}
                   showThumbs={false}
+                  renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                    hasPrev && (
+                      <button type="button" style={{ ...arrowStyles, left: 15 }}
+                        onClick={onClickHandler} title={label} >
+                        <i className="fa fa-chevron-left carousel-icon"></i>
+                      </button>
+                    )
+                  }
+                  renderArrowNext={(onClickHandler, hasNext, label) =>
+                    hasNext && (
+                      <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 15 }}>
+                        <i className="fa fa-chevron-right carousel-icon"></i>
+                      </button>
+                    )
+                  }
                 >
                   {carouselImages}
                 </Carousel>
@@ -91,8 +120,11 @@ class Portfolio extends Component {
                 <div className="title">{projects.title}</div>
                 <div className="tag">{projects.category}</div>
                 <div className="detail">{projects.description}.</div>
-                <button className="button" type="button" >View Site</button>
-                <button className="close" type="button" onClick={() => { this.handleCloseModal(projects.nameModal) }}><i className="fa fa-times"></i></button>
+                <div style={{marginTop:"22px"}}>
+                  {projects.url ? <a className="button" type="button" rel="noopener noreferrer" href={projects.url}>View Site</a>
+                    : ''}
+                  <button className="close" type="button" onClick={() => { this.handleCloseModal(projects.nameModal) }}><i className="fa fa-times"></i></button>
+                </div>
               </div>
 
             </Modal>
