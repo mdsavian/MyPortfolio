@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #2B2B2B; }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -590,11 +590,11 @@ ul#nav li.current a {
  }
 
  .portfolio-modal .info-box{     
-   border-top: 3px solid #1b242f;
+   border-top: 2px solid #1b242f;
    box-sizing: border-box;
    color: #313131;
-   height: 120px;
-   padding: 10px 15px 0px 10px;
+   height: 110px;
+   padding: 5px 15px 0px 10px;
 }
 
 .portfolio-modal .title{     
@@ -1041,7 +1041,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
+   background: #2B2B2B;
    padding-top: 96px;
    padding-bottom: 102px;
    color: #636363;
@@ -1124,24 +1124,24 @@ call-to-action .button {
 	color: #fff;
 	background-color: #373233;
 }
+
 #contact button.submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color:#303030;
-   background: #fff;
-	border: none;
+   background: #FFF;
+   color:#474747;
+   border: 2px solid #474747;
    cursor: pointer;
    height: auto;
    display: inline-block;
 	border-radius: 1000px;
    margin-left: 30%;
    width:250px;
-   border: 2px solid #303030;
 }
 #contact button.submit:hover {
-   color: #fff;
+   background: #474747;
+   color: #FFF;
    border: 2px solid #fff;
-	background: #0D0D0D;
 }
 #contact span.required {
 	color: #EBEEEE;
@@ -1206,7 +1206,7 @@ call-to-action .button {
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
-   color: #303030;
+   color: #2B2B2B;
    font-size: 14px;
    text-align: center;
    position: relative;

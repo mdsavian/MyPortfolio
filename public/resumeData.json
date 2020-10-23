@@ -129,8 +129,8 @@
         "title": "Argo App",
         "language":".Net / Xamarin",
         "nameModal":"showModalOne",
-        "category": "(offline now) A fighting gear company I started",
-        "description": "My Travel Blog for my post-university travels",
+        "category": "An app to admin a company of multiples gas station.",
+        "description": "In this app you can look a resume of the sales, the stock of fuel, you can program the change of the price of fuel to a determinate hour and many other functions.",
         "image": "ArgoApp2.jpeg",
         "imagesCarousel":"ArgoApp1.jpeg,ArgoApp2.jpeg,ArgoApp3.jpeg,ArgoApp4.jpeg",
         "url": "https://play.google.com/store/apps/details?id=com.argosistemas.argo"
@@ -139,8 +139,8 @@
         "title": "GerCli",
         "language":".Net Core 2.0 / Angular 7",
         "nameModal":"showModalTwo",
-        "category": "(offline now) A fighting gear company I started",
-        "description": "My Travel Blog for my post-university travels",
+        "category": "This is a web erp to manage your medical clinic.",
+        "description": "Create appointments on a calendar, see the bills, your earnings and many other things to manage your clinic with multiple doctors.",
         "image": "Gercli0.png",
         "imagesCarousel":"Gercli0.png,Gercli1.png,Gercli2.png,Gercli3.png",        
         "url": "https://github.com/mdsavian/AppControleMedico"
@@ -149,8 +149,8 @@
         "title": "Hotel Reservation",
         "language":"ReactJs",
         "nameModal":"showModalThree",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "description": "My Travel Blog for my post-university travels",
+        "category": "A simple site to look hotel rooms.",
+        "description": "I had developed this site based on one video in youtube to practice my skills on ReactJs.",
         "image": "hotel0.png",
         "imagesCarousel":"hotel0.png,hotel1.png,hotel2.png",
         "url": "https://www.youtube.com/watch?v=LXJOvkVYQqA"
@@ -159,8 +159,8 @@
         "title": "Portfolio Website",
         "language":"ReactJs / Node Js",
         "nameModal":"showModalFour",
-        "category": "A React based resume website template",
-        "description": "My Travel Blog for my post-university travels",
+        "category": "An portfolio web site made in React.",
+        "description": "This is my portfolio web site, you can check this in github and can use like an template.",
         "image": "resume-website.jpg",
         "imagesCarousel":"smirkspace.jpg,smirkspace.jpg",
         "url": ""

@@ -43,7 +43,7 @@ class Portfolio extends Component {
       width: 65,
       height: 55,
       cursor: 'pointer',
-      background: '#474747',
+      background: 'rgba(71, 71, 71, 0.5) none repeat scroll 0% 0%',
       color: '#fff',
       border: '2px solid #fff',
     };
@@ -120,8 +120,8 @@ class Portfolio extends Component {
                 <div className="title">{projects.title}</div>
                 <div className="tag">{projects.category}</div>
                 <div className="detail">{projects.description}.</div>
-                <div style={{marginTop:"22px"}}>
-                  {projects.url ? <a className="button" type="button" rel="noopener noreferrer" href={projects.url}>View Site</a>
+                <div style={{marginTop:"5px"}}>
+                  {projects.url ? <a className="button" type="button" target="_blank"  rel="noopener noreferrer" href={projects.url}>View Site</a>
                     : ''}
                   <button className="close" type="button" onClick={() => { this.handleCloseModal(projects.nameModal) }}><i className="fa fa-times"></i></button>
                 </div>
