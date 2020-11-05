@@ -52,8 +52,8 @@ class Resume extends Component {
             </div>
 
             <div className="nine columns main-col">
-              <p className="lead center">I'm a tinkerer and am always interested in playing around
-          with new technologies but these are the ones that have really won me over</p>
+              <p className="lead center">I'm always interested in search and test new technologies 
+              but these are the ones that have really won me over</p>
             </div>
           </Bounce>
 

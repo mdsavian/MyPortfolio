@@ -460,7 +460,7 @@ img {
    height: auto;
 }
 img.skill {
-   max-width: 65%;
+   max-width: 50%;
 }
 img.pull-right { margin: 12px 0px 0px 18px; }
 img.pull-left { margin: 12px 18px 0px 0px; }

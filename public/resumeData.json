@@ -4,7 +4,8 @@
     "occupation": "Software Engineer",
     "description": "I'm specializing in <span> building complex, fast and high-quality backend softwares for companies.\b</span> Actually I'm working as \b<span>backend software engineer on a web project </span> for telemedicine in Brazil.",
     "image": "profilepic.png",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio": "I'm a developer who is passionate about new challenges who had a big thirst to know different business areas. I like to get me deeper into business and have direct contact with the end user to have a clearly undertand of the problem, I believe that this way I can understand better the problem of user and consequently wast less time to develop a great application.",
+    "biotwo": "I'm working daily developing softwares in backend with .Net Core and Node Js, and in my spare time I'm learning basics concepts of frontend and developing some applications that you can check out below.",
     "contactmessage": "If you have a project that may be a good fit, or maybe you’d like to chat about a project please fill in the form below and I’ll get back within 1-2 days.",
     "email": "marlon.savian@gmail.com",
     "phone": "+55 54 99949-1804",
@@ -70,55 +71,67 @@
       {
         "company": "My Smart Clinic",
         "title": "Software Engineer",
-        "years": "July 2020 - Present",
-        "description": "I'm responsible for analyzing and code the best solution for a web app in React with backend on Node.js."
+        "years": "Jul 2020 - Present",
+        "description": "I and other engineer are responsible to make the better decisions to developing a backend of new project for telemedicine in Brazil. In this project we use Node js, MySql, GraphQl, Apollo, Typescript and another frameworks."
       },
       {
-        "company": "Super Cool Studio",
-        "title": "Junior bug fixer",
-        "years": "March 2007 - February 2010",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company": "Argo",
+        "title": "Software Engineer",
+        "years": "Apr 2018 - Jul 2020",
+        "description": "Analysis and development of solutions based on the needs of the current fuel trade scenario. Development of several mobile solutions in the Xamarin language. Adjustments and new implementations of the company's main software in Microsoft .Net."
+      },
+      {
+        "company": "Grendene",
+        "title": "Software Engineer",
+        "years": "Feb 2015 - Apr 2018",
+        "description": "Responsible for analyzing and developing solutions to facilitate and improve the production of the new shoe season. I got to know several different sectors and develop solutions for all of them, I gained experience bringing solutions in production, exports, finance and also in engineering"
+      },
+      {
+        "company": "Totvs",
+        "title": "Developer",
+        "years": "Sep 2013 - Feb 2015",
+        "description": "I was responsible for visiting clients, and together with business analysts to develop the best solution to the problem encountered."
       }
     ],
     "skills": [
       {
         "name": ".Net Core",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "description": ".Net is my main language, I have been developing with it for 6 years, recently I worked on a ERP to big companies of gas stations.",
         "image": "images/tech/net_core.png"
       },
       {
         "name": "Xamarin",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "description": "I used Xamarin to develop exclusive Apps for companies, and I worked with this tool in the App of the ERP who administrate companies of gas stations.",
         "image": "images/tech/xamarin.png"
       },
       {
         "name": "SQL",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "description": "I have used SQL for all of my projects so far, in the project I'm working now I use MySql  but in my particular projects I prefer postgreSQL.",
         "image": "images/tech/sql.jpg"
       },
       {
         "name": "Node.js",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "description": "Node Js is something new for me, I'm working with him on the backend for the first time in the application I'm working on now.",
         "image": "images/tech/nodejs.png"
       },      
       {
         "name": "TypeScript",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "description": "I use Typescript in all the web projects I've done, this tool is really essential for me. I'm a 'son' of .Net and Typescript helped me a lot to develop a backend in Node Js.",
         "image": "images/tech/typescript.webp"
       },
       {
-        "name": "HTML5",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
-        "image": "images/tech/html5.png"
-      },
-      {
         "name": "React",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "description": "React Js is my favorite framework to develop web sites, I have used Angular in another project but I think React is more 'clean' and easy to understand.",
         "image": "images/tech/react.png"
       },
       {
+        "name": "GraphQL",
+        "description": "I use GraphQL in the app I'm working now and I'm fascinated about it, I started using in my personal projects because I think this is a big evolution in the manner we understand queries.",
+        "image": "images/tech/graphql.png"
+      },
+      {
         "name": "Git",
-        "description": "I use Git for all of my projects so far. I have used Git for version control in small teams and have toyed around with contributing to Open Source Projects.",
+        "description": "The best tool to version control, I use in all of my projects because it have a great integration with Visual Studio Code.",
         "image": "images/tech/git.jpg"
       }
     ]
