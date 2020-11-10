@@ -120,7 +120,7 @@ class Portfolio extends Component {
                 <div className="title">{projects.title}</div>
                 <div className="tag">{projects.category}</div>
                 <div className="detail">{projects.description}.</div>
-                <div style={{marginTop:"5px"}}>
+                <div style={{marginTop:"5px", position: 'absolute', bottom: 0}}>
                   {projects.url ? <a className="button" type="button" target="_blank"  rel="noopener noreferrer" href={projects.url}>View Site</a>
                     : ''}
                   <button className="close" type="button" onClick={() => { this.handleCloseModal(projects.nameModal) }}><i className="fa fa-times"></i></button>
