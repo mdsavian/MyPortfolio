@@ -314,7 +314,7 @@ ul#nav li.current a {
    padding-bottom: 6px;
 }
 #resume h3 {
-   font: 25px/30px 'Raleway';
+   font: 35px/30px 'Raleway';
    font-weight: bold;
 }
 
@@ -327,7 +327,7 @@ ul#nav li.current a {
    border-bottom: 1px solid #E8E8E8;
 }
 #resume .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
+   font: 18px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
@@ -337,7 +337,7 @@ ul#nav li.current a {
    margin-left: 5px;
 }
 #resume .date {
-   font: 15px/24px 'Raleway';
+   font: 18px/24px 'Raleway';
    margin-top: 6px;
 }
 
@@ -493,7 +493,7 @@ ul#nav li.current a {
 }
 
 #portfolio h2 {
-   font: 20px/24px 'Raleway';
+   font: 28px/24px 'Raleway';
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;

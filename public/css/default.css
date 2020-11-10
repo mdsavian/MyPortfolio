@@ -171,10 +171,13 @@ h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 .subheader { }
 
-p { margin: 0 0 30px 0; }
+p { margin: 0 0 30px 0; 
+   font: 17px/22px  'Raleway';
+}
+
 p img { margin: 0; }
 p.lead {
-   font: 19px/36px  'Raleway';
+   font: 28px/36px  'Raleway';
    margin-bottom: 18px;
 }
 
@@ -702,7 +705,7 @@ input[type="checkbox"] { display: inline; }
 /* block grids
 --------------------------------------------------------------------- */
 .bgrid-sixths [class*="column"]   { width: 16.66667%; }
-.bgrid-quarters [class*="column"] { width: 25%; }
+.bgrid-quarters [class*="column"] { width: 22.7%; }
 .bgrid-thirds [class*="column"]   { width: 33.33333%; }
 .bgrid-halves [class*="column"]   { width: 50%; }
 
