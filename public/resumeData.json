@@ -113,11 +113,13 @@
         "name": "Node.js",
         "description": "Node Js is something new for me, I'm working with him on the backend for the first time in the application I'm working on now.",
         "image": "images/tech/nodejs.png"
-      },      
+      }
+    ],
+    "skillsTwo": [
       {
         "name": "TypeScript",
         "description": "I use Typescript in all the web projects I've done, this tool is really essential for me. I'm a 'son' of .Net and Typescript helped me a lot to develop a backend in Node Js.",
-        "image": "images/tech/typescript.webp"
+        "image": "images/tech/typescript.jpg"
       },
       {
         "name": "React",
@@ -140,44 +142,44 @@
     "projects": [
       {
         "title": "Argo App",
-        "language":".Net / Xamarin",
-        "nameModal":"showModalOne",
+        "language": ".Net / Xamarin",
+        "nameModal": "showModalOne",
         "category": "An app to admin a company of multiples gas station.",
         "description": "In this app you can look a resume of the sales, the stock of fuel, you can program the change of the price of fuel to a determinate hour and many other functions.",
         "image": "ArgoApp1.jpeg",
-        "imagesCarousel":"ArgoApp0.jpeg,ArgoApp1.jpeg,ArgoApp2.jpeg,ArgoApp3.jpeg",
+        "imagesCarousel": "ArgoApp0.jpeg,ArgoApp1.jpeg,ArgoApp2.jpeg,ArgoApp3.jpeg",
         "url": "https://play.google.com/store/apps/details?id=com.argosistemas.argo"
       },
       {
         "title": "GerCli",
-        "language":".Net Core 2.0 / Angular 7",
-        "nameModal":"showModalTwo",
+        "language": ".Net Core 2.0 / Angular 7",
+        "nameModal": "showModalTwo",
         "category": "This is a web erp to manage your medical clinic.",
         "description": "Create appointments on a calendar, see the bills, your earnings and many other things to manage your clinic with multiple doctors.",
         "image": "Gercli0.png",
-        "imagesCarousel":"Gercli0.png,Gercli1.png,Gercli2.png,Gercli3.png",        
+        "imagesCarousel": "Gercli0.png,Gercli1.png,Gercli2.png,Gercli3.png",
         "url": "https://github.com/mdsavian/AppControleMedico"
       },
       {
         "title": "Hotel Reservation",
-        "language":"ReactJs",
-        "nameModal":"showModalThree",
+        "language": "ReactJs",
+        "nameModal": "showModalThree",
         "category": "A simple site to look hotel rooms.",
         "description": "I had developed this site based on one video in youtube to practice my skills on ReactJs.",
         "image": "hotel0.png",
-        "imagesCarousel":"hotel0.png,hotel1.png,hotel2.png",
+        "imagesCarousel": "hotel0.png,hotel1.png,hotel2.png",
         "url": "https://www.youtube.com/watch?v=LXJOvkVYQqA"
       },
       {
         "title": "Portfolio Website",
-        "language":"ReactJs / Node Js",
-        "nameModal":"showModalFour",
+        "language": "ReactJs / Node Js",
+        "nameModal": "showModalFour",
         "category": "An portfolio web site made in React.",
         "description": "This is my portfolio web site, you can check this in github and can use like an template.",
         "image": "portfolio3.png",
-        "imagesCarousel":"portfolio0.png,portfolio1.png,portfolio2.png,portfolio3.png,portfolio4.png",
+        "imagesCarousel": "portfolio0.png,portfolio1.png,portfolio2.png,portfolio3.png,portfolio4.png",
         "url": "https://www.marlonsavian.com"
-      }      
+      }
     ]
   },
   "testimonials": {

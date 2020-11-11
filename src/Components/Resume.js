@@ -26,6 +26,15 @@ class Resume extends Component {
           </Bounce>
         </div>
       })
+      var skillsTwo = this.props.data.skillsTwo.map(function (skill) {
+        return <div key={skill.name} className="columns feature-item" >
+          <Bounce bottom>
+            <img className="skill" alt={skill.name} title={skill.name} src={skill.image} />
+            <h5>{skill.name}</h5>
+            <p>{skill.description}</p>
+          </Bounce>
+        </div>
+      })
     }
 
     return (
@@ -57,8 +66,11 @@ class Resume extends Component {
             </div>
           </Bounce>
 
-          <ul className="bgrid-quarters s-bgrid-thirds cf">
+          <ul className="bgrid-quarters s-bgrid-quarters cf">
             {skills}
+          </ul>
+          <ul className="bgrid-quarters s-bgrid-quarters cf">
+            {skillsTwo}
           </ul>
         </div>
       </section >
