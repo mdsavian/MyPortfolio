@@ -18,9 +18,7 @@
     "react-typist": "^2.0.5"
   },
   "scripts": {
-    "start": "node server",
-    "postinstall": "npm run build",
-    "startreact": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
