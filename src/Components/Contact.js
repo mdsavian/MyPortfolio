@@ -129,7 +129,7 @@ const send = () => {
 
    $('#image-loader').fadeIn();
 
-   axios.post('http://localhost:3030/send',
+   axios.post('http://marlonsavian.kinghost.net/emailPortfolio',
       {
          data: data,
          headers: {
@@ -137,7 +137,6 @@ const send = () => {
          }
       })
       .then(response => {
-
          if (response.data && response.data.accepted.length > 0) {
             $('#message-success').html("Email was successfully sent. Thank you for contacting me.");
             callMessage('#message-success');
